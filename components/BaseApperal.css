@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+.container{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 48rem;
+    max-height: 40rem;
+    background-image: url("../images/bg-pattern-desktop.svg");
+}
+.about{
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+}
+.logo{
+    margin: 2rem -11rem 5rem 6rem;
+}
+.logo img{
+    width: 7rem;
+    height: 1.5rem;
+}
+.heading{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 10rem;
+    letter-spacing: 0.5rem;
+}
+.paragraph{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+    color:hsl(0, 36%, 70%);
+    line-height: 1rem;
+    width: 19rem;
+}
+.input{
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    border: 0.1rem solid hsl(0, 36%, 70%) ;
+    background-color: transparent;
+    display: inline-block;
+    color:  hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 1rem -4rem 0 0 ;
+}
+.button{
+    background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 2rem;
+    width: 4rem;
+    padding: 0.5rem 0 0.6rem 0;
+    display: inline-block;
+}
+.button img{
+   width: 0.5rem;
+}
+@media screen and (max-width:414px){
+   
+    .card{
+        flex-direction:column;
+        width: 100%;
+    }
+    .logo{
+        margin-left: 2rem;
+    }
+    .about{
+        margin-top: 10rem;
+    }
+    .heading{
+        text-align: center;
+    }
+    .paragraph{
+        text-align: center;
+        width: 105%;
+    }
+    .poster{
+        margin-top: -34rem;
+    }
+    .input{
+        width: 90%;
+    }
+}
